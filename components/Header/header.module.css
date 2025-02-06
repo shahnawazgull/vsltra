@@ -1,0 +1,132 @@
+/* Main Container */
+.parentMain {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header Styling */
+.headerMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  color: white;
+  height: 75px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* Container to keep logo and profile centered and limit its width */
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1237px; /* Limiting the max width of the container */
+  margin: 0 auto;
+}
+
+
+
+/* Sub Header Section (Credits & Profile) */
+.subMain {
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative; /* To position dropdown relative to this container */
+}
+
+/* Credits Remaining */
+.crRem p {
+  border-right: 1px solid white;
+  color: white;
+  font-size: 14px;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.crRem p {
+  text-transform: capitalize;
+}
+
+/* Profile Icon Styling */
+/* .profile {
+  position: relative; 
+  cursor: pointer; 
+} */
+
+/* .profile img {
+  background-color: #c4c4c4;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 10px;
+} */
+
+/* Dropdown Styling */
+.dropdown {
+  position: absolute;
+  top: 50px; /* Position the dropdown just below the profile icon */
+  right: 0; /* Align to the right of the profile icon */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 130px;
+  z-index: 1000; /* Ensure the dropdown is above other elements */
+}
+
+.logoutButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make the logout button take the full width */
+  text-align: center;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .headerMain {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .subMain {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .crRem p {
+    border-right: none;
+    margin-bottom: 10px;
+  }
+
+  .profile img {
+    padding: 8px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerMain {
+    height: auto;
+    padding: 15px;
+  }
+
+  .subMain {
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .crRem p {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,101 @@
+.bg-main-container {
+    width: 683px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #33333365;
+    text-transform: capitalize;
+  }
+  
+  .goback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .goback img {
+    margin-right: 20px;
+  }
+  
+  .videoplaceholder {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .box button {
+    background-color: transparent;
+    border: 1px solid #ff6500;
+    border-radius: 10px;
+    width: 70px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .up {
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  input[type="file"] + label {
+    background-color: #ff6500;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .txt {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sub {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .box2 {
+    border: 1px solid #dedede;
+    padding: 10px;
+    width: 100px;
+  }
+  
+  .start {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left, .right {
+    margin-top: 1rem;
+  }
+  
+  .left button, .right button {
+    text-transform: capitalize;
+    border: none;
+    background-color: #ff6500;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 12px;
+    cursor: pointer;
+  }
+  
+  .right button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
+  }
+  

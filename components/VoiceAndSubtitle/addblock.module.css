@@ -1,0 +1,147 @@
+.musicForm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.headerAddb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.headerAddb h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.videoPreview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.mp3Block {
+  margin-bottom: 1.5rem;
+}
+
+.mp3Header  {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.mp3Header span {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+.deleteBtn {
+  background-color: transparent;
+  border: 1px solid #ff6500;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #ff6500;
+  margin-left: auto;
+}
+
+.timeSelection {
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.box2 {
+  border: 1px solid #E3E3E3 !important;
+  border-radius: 4px;
+  padding: 10px !important;
+  cursor: pointer !important;
+  width: 300px !important;
+}
+
+.timeSelection label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: black;
+  display: block;
+}
+
+.timeInputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.start label {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+.leftbtnn {
+  text-transform: capitalize;
+  border: none;
+  background-color: #ff6500;
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 249px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.forfont {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.createVideo {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+
+.formusic {
+  /* padding: 9px 23px !important; */
+  border-radius: 4px;
+  border: none !important;
+  color: #111111B2 !important;
+  font-weight: 400 !important;
+  background-color: transparent !important;
+  font-size: 16px;
+}
+
+.rightbtnn {
+  width: 237px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6500;
+  color: white;
+  border-radius: 4px;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}

@@ -1,0 +1,16 @@
+/* extra.module.css */
+.navbar-container #basic-navbar-nav {
+    margin-left: 14rem !important; /* Ensures it overrides Bootstrap's default styles */
+  }
+  
+  .btnwidth {
+    width: 203px !important;
+    font-weight: 600;
+  }
+  
+  .header .header-profile .btns .btnwidth {
+    /* If you want to ensure the button within specific areas is targeted */
+    width: 203px !important;
+    font-weight: 600;
+  }
+  

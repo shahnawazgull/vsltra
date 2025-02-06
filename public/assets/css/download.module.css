@@ -1,0 +1,138 @@
+
+  /* Main container styling */
+  .downMainContainer {
+    max-width: 90%;
+    width: 683px;
+    margin: 0 auto;
+    padding: 1rem;
+    /* border: 1px solid #33333365; */
+    border-radius: 10px;
+    text-transform: capitalize;
+    background-color: white;
+  }
+  .downMainContainer h3{
+    font-size: 22px !important;
+    font-weight: 700 !important;
+  }
+  
+  /* Go-back section */
+  .goback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .goback img {
+    max-width: 30px;
+  }
+  
+  .goback h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /* Video placeholder */
+  .videoPlaceholder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Button section */
+  .right button {
+    text-transform: capitalize;
+    border: none;
+    background-color: #ff6500;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 10px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .right button img {
+    max-width: 20px;
+    margin-left: 10px;
+  }
+  
+  .right button:hover {
+    background-color: #e85c00;
+  }
+  
+  /* Bottom text section */
+  .bottomText {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 0.14px !important;
+    line-height: 1.4;
+    color: #555;
+  }
+  .bottomText p{
+    font-size: 14px;
+  }
+  
+  .bottomText img {
+    margin-left: 10px;
+    max-width: 16px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .downMainContainer {
+      padding: 1rem;
+      width: 100%;
+      max-width: 500px;
+    }
+  
+    .goback h3 {
+      font-size: 1.2rem;
+    }
+  
+    .right button {
+      font-size: 0.9rem;
+      padding: 12px;
+    }
+  
+    .bottomText p{
+      font-size: 14px !important;
+    }
+  
+    .bottomText img {
+      max-width: 12px;
+    }
+  
+    .videoPlaceholder img {
+      width: 100%;
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .goback h3 {
+      font-size: 1rem;
+    }
+  
+    .right button {
+      font-size: 0.8rem;
+      padding: 10px;
+    }
+  
+    .bottomText p{
+      font-size: 0.7rem;
+    }
+  
+    .right button img {
+      max-width: 18px;
+    }
+  }
+  

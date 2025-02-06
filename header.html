@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <style>
+        /* General Reset */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        
+
+        /* Main Container */
+        .parent-main {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Header Styling */
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #111;
+            color: white;
+            height: 75px;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        /* Container to keep logo and profile centered and limit its width */
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px; /* Limiting the max width of the container */
+            margin: 0 auto;
+        }
+
+        /* Logo Styling */
+        .header-main img {
+            height: 40px;
+            width: auto;
+        }
+
+        /* Sub Header Section (Credits & Profile) */
+        .sub-main {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .cr-rem p {
+            border-right: 1px solid white;
+            padding-right: 20px;
+            margin-right: 20px;
+        }
+
+        .profile {
+            position: relative;
+        }
+
+        .profile img {
+            background-color: #C4C4C4;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .cr-rem p {
+                text-transform: capitalize;
+            }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .header-main {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .sub-main {
+                margin-top: 10px;
+                flex-direction: column;
+            }
+
+            .cr-rem p {
+                border-right: none;
+                margin-bottom: 10px;
+            }
+
+            .profile img {
+                padding: 8px;
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-main {
+                height: auto;
+                padding: 15px;
+            }
+
+            .sub-main {
+                margin-top: 10px;
+                flex-direction: column;
+            }
+
+            .cr-rem p {
+                margin-bottom: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="parent-main">
+        <div class="header-main">
+            <div class="header-content">
+                <!-- Logo -->
+                <img src="/public/assets/images/logo.svg" alt="Logo">
+
+                <!-- Sub Header Section -->
+                <div class="sub-main">
+                    <!-- Credits Remaining -->
+                    <div class="cr-rem">
+                        <p>credits remaining: 10</p>
+                    </div>
+
+                    <!-- Profile Icon -->
+                    <div class="profile">
+                        <img src="/public/assets/images/admin-user-icn.svg" alt="Profile Icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
