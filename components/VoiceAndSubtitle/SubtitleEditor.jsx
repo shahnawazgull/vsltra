@@ -128,7 +128,7 @@ export default function SubtitleEditor({
                         }}
                     >
                         <div
-                            className="flex items-center justify-center"
+                            className="flex items-center justify-center text-center"
                             style={{
                                 fontSize: `${fontSize}px`,
                                 fontFamily: fontFamily, // Apply the font family here
