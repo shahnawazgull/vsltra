@@ -261,8 +261,8 @@ const VoiceAndSubtitle = () => {
                 className="text-center d-flex flex-column justify-content-center"
                 style={{
                   width: '550px',
-                  height: '109px',
-                  padding: '40px 24px 40px 48px',
+                  height: '90px',
+                  padding: '20px 24px 20px 20px',
                   color: '#000000',
                   fontSize: '24px',
                   fontWeight: '700',

@@ -85,13 +85,13 @@ export default function SubtitleEditor({
             {uploadedVideo && (
                 <div
                     ref={videoContainerRef}
-                    className="relative w-full max-w-[800px] h-auto bg-gray-100 rounded-lg overflow-hidden"
+                    className="relative w-full max-w-[800px] h-[auto] bg-gray-100 rounded-lg overflow-hidden"
                 >
                     {/* Preview Text on Top */}
                     <div className="absolute top-0 left-0 w-full text-4xl font-bold text-[#111] p-2 bg-white z-10">
                         Preview
                     </div>
-                    <video width="100%" height="100%" controls className="w-full">
+                    <video width="100%" height="300px" controls className="w-full h-[400px]">
                         <source src={uploadedVideo} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
@@ -167,13 +167,12 @@ export default function SubtitleEditor({
                 />
 
                 <div className="grid grid-cols-2 gap-6 w-full mt-4">
-                    <button onClick={() => setFontSize((prev) => prev - 2)} className="btn proceedbtn flex text-[16px] items-center justify-center py-[9px] px-[16px] bg-[#ff6500] text-white rounded-lg hover:bg-[#e55a00] transition-all">
+                    <button onClick={() => setFontSize((prev) => prev - 2)} className="btn proceedbtn flex text-[16px] items-center justify-center py-[9px] px-[16px] bg-[#ff6500] text-white rounded-[8px] hover:bg-[#e55a00] transition-all"> {/* Increased border-radius */}
                         Decrease Font
                     </button>
-                    <button onClick={() => setFontSize((prev) => prev + 2)} className="btn proceedbtn text-[16px] flex items-center justify-center py-[9px] px-[16px] bg-[#ff6500] text-white rounded-lg hover:bg-[#e55a00] transition-all">
+                    <button onClick={() => setFontSize((prev) => prev + 2)} className="btn proceedbtn text-[16px] flex items-center justify-center py-[9px] px-[16px] bg-[#ff6500] text-white rounded-[8px] hover:bg-[#e55a00] transition-all"> {/* Increased border-radius */}
                         Increase Font
                     </button>
-
                 </div>
 
                 {/* Color Pickers for Font and Background Color */}
