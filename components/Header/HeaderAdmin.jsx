@@ -1,7 +1,7 @@
 'use client'; // Ensure this component is rendered only on the client side
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import styles from './header.module.css'; 
+import styles from './header.module.css';
 import Link from 'next/link'; // Import the Link component from next/link
 
 const Header = () => {
@@ -21,11 +21,10 @@ const Header = () => {
   // Handle logout - will use Link for redirection
   const handleLogout = () => {
     // Clear any user session or data if necessary
-    // Redirect to the home page ('/')
-    // Using Link for redirect instead of router.push()
+    // Redirect to the home page ('/'), or handle logout
   };
 
-  if (!isClient) return null; // Ensure that the component is rendered only on the client-side
+  // if (!isClient) return null; // Ensure that the component is rendered only on the client-side
 
   return (
     <div className={styles.parentMain}>
@@ -51,7 +50,31 @@ const Header = () => {
             {/* Dropdown Menu */}
             {isDropdownOpen && (
               <div className={styles.dropdown}>
-                <Link href="/" className={styles.logoutButton}>Logout</Link>
+                {/* Username & Email Subcontainer */}
+                <div className={styles.userInfo}>
+                  <div className={styles.username}>Olivia Rhye</div>
+                  <div className={styles.email}>olivia@example.com</div>
+                </div>
+
+                {/* Border Between Username & Email and Subscription Section */}
+                <div className={styles.border}></div>
+
+                {/* Manage Subscription Section */}
+                <div className={styles.subscription}>
+                  <p>Manage Subscription</p>
+                  <div className={styles.forLast}>
+                    <p>Credit left</p>
+                    <p className={styles.forfnt}>10</p>
+                  </div>
+                  <p>Affiliate</p>
+                </div>
+
+
+                {/* Border Between Subscription Section and Logout */}
+                <div className={styles.border}></div>
+
+                {/* Log Out Button */}
+                <Link href="/" className={styles.logoutButton}>Log out</Link>
               </div>
             )}
           </div>
