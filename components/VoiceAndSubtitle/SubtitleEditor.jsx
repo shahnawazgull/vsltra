@@ -18,8 +18,6 @@ const Button = ({ children, onClick, className }) => (
 );
 
 export default function SubtitleEditor({
-    subtitleText = "Your subtitle here ", // Default subtitle text
-    setSubtitleText,
     fontFamily,
     setFontFamily,
     fontSize,
@@ -85,13 +83,13 @@ export default function SubtitleEditor({
             {uploadedVideo && (
                 <div
                     ref={videoContainerRef}
-                    className="relative w-full max-w-[800px] h-[auto] rounded-lg overflow-hidden"
+                    className="relative w-full max-w-[800px] h-auto rounded-lg overflow-hidden"
                 >
                     {/* Preview Text on Top */}
                     <div className="absolute top-0 left-0 w-full text-4xl font-bold text-[#111] p-2 bg-white z-10">
                         Preview
                     </div>
-                    <video width="100%" height="300px" controls className="w-full h-[400px]">
+                    <video width="100%" height="100%" controls className="w-full">
                         <source src={uploadedVideo} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
@@ -125,6 +123,8 @@ export default function SubtitleEditor({
                         style={{
                             position: 'absolute',
                             zIndex: 1,
+                            borderRadius: '20px', // Apply border-radius here
+                            overflow: 'hidden', // Prevent overflow during resizing
                         }}
                     >
                         <div
@@ -137,10 +137,12 @@ export default function SubtitleEditor({
                                 color: forgroundColor, // Font color
                                 backgroundColor: backgroundColor, // Subtitle background color
                                 padding: '10px',
-                                borderRadius: '8px',
+                                borderRadius: '20px', // Apply the same border-radius here
+                                overflow: 'hidden', // Ensure content doesn't overflow the box
                             }}
                         >
-                            {subtitleText}
+                            {/* Default Subtitle Text */}
+                            This Is How Your Subtitle Text Will Be Displayed
                         </div>
                     </Rnd>
                 </div>
