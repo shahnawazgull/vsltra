@@ -151,23 +151,23 @@ export default function SubtitleEditor({
 
             {/* Font Upload and Controls */}
             <div className="mt-4">
-            <InputFile
-    label="Upload Font File:"
-    buttonTitle="Choose file"
-    icon={uploadIcon}
-    name="font"
-    acceptFile={[".otf", ".ttf", ".woff"]}
-    errormessage={fontError}
-    required
-    onChange={(e) => {
-        const fontFile = e.target.files[0];
-        if (fontFile) {
-            handleFontUpload(fontFile);
-        }
-    }}
-    className="custom-input"
-    labelStyle="text-[20px] font-bold text-[#000] mb-2" // Apply labelStyle correctly
-/>
+                <InputFile
+                    label="Upload Font File:"
+                    buttonTitle="Choose file"
+                    icon={uploadIcon}
+                    name="font"
+                    acceptFile={[".otf", ".ttf", ".woff"]}
+                    errormessage={fontError}
+                    required
+                    onChange={(e) => {
+                        const fontFile = e.target.files[0];
+                        if (fontFile) {
+                            handleFontUpload(fontFile);
+                        }
+                    }}
+                    className="custom-input"
+                    labelStyle="text-[20px] font-bold text-[#000] mb-2" // Apply labelStyle correctly
+                />
 
 
                 <div className="grid grid-cols-2 gap-6 w-full mt-4">
@@ -226,10 +226,11 @@ export default function SubtitleEditor({
                         fldLbl="Font Color:"
                         category="picker"
                         name="font_color"
-                        defaultColor="#ffffff" // Default font color: white
-                        onChange={setForGroundColor} // Handler for font color change
-                        labelStyle="text-[24px] font-semibold text-[#000000] mb-2 mt-2" // Styling for label with margin-top 2px
+                        defaultColor="#ffffff"
+                        onChange={setForGroundColor}
+                        labelStyle="text-[24px] font-semibold text-[#000000] mb-2 mt-2"
                     />
+
                     <BrowseFld
                         needChange="back"
                         currColor={backgroundColor}
