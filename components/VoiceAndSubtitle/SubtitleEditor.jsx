@@ -40,13 +40,9 @@ export default function SubtitleEditor({
 
     // Handle font upload using InputFile
     const handleFontUpload = (fontFile) => {
-        // Create a URL for the uploaded font file
         const fontUrl = URL.createObjectURL(fontFile);
-
-        // Extract the font name from the file name (without extension)
         const fontName = fontFile.name.split('.')[0]; // Use the font file name as the font name
 
-        // Create a new @font-face rule
         const newStyle = document.createElement('style');
         newStyle.appendChild(
             document.createTextNode(`
@@ -58,10 +54,7 @@ export default function SubtitleEditor({
         );
         document.head.appendChild(newStyle);
 
-        // Update the font family state
         setFontFamily(fontName);
-
-        // Log to verify the font is being added
         console.log(`Font '${fontName}' loaded from ${fontUrl}`);
     };
 
@@ -137,11 +130,10 @@ export default function SubtitleEditor({
                                 height: '100%',
                                 color: forgroundColor, // Font color
                                 backgroundColor: backgroundColor, // Subtitle background color
-                                padding: '10px',
+                                padding: '10px', // Ensure consistent padding
                                 borderRadius: `${borderRadius}px`, // Apply the dynamic border-radius here
                                 overflow: 'hidden', // Ensure content doesn't overflow the box
-                            }}
-                        >
+                            }}>
                             {/* Default Subtitle Text */}
                             This Is How Your Subtitle Text Will Be Displayed
                         </div>
@@ -171,11 +163,11 @@ export default function SubtitleEditor({
 
 
                 <div className="grid grid-cols-2 gap-6 w-full mt-4">
-                    <button onClick={() => setFontSize((prev) => prev - 2)} className="flex text-[16px] items-center justify-center py-[9px] px-[16px] bg-[#ff6500] text-white rounded-[8px] "> {/* Increased border-radius */}
-                        Decrease Font
-                    </button>
-                    <button onClick={() => setFontSize((prev) => prev + 2)} className="text-[16px] flex items-center justify-center py-[9px] px-[16px] bg-[#ff6500] text-white rounded-[8px] "> {/* Increased border-radius */}
+                    <button onClick={() => setFontSize((prev) => prev + 2)} className="flex text-[16px] items-center justify-center py-[9px] px-[16px] bg-[#ff6500] text-white rounded-[8px] "> {/* Increased border-radius */}
                         Increase Font
+                    </button>
+                    <button onClick={() => setFontSize((prev) => prev - 2)} className="text-[16px] flex items-center justify-center py-[9px] px-[16px] bg-[#ff6500] text-white rounded-[8px] "> {/* Increased border-radius */}
+                        Decrease Font
                     </button>
                 </div>
 
@@ -192,14 +184,14 @@ export default function SubtitleEditor({
                         onChange={(e) => setBorderRadius(Number(e.target.value))}
                         className="w-full appearance-none h-3 rounded-lg"
                         style={{
-                            background: `linear-gradient(to right, #FFA76D ${(borderRadius / 50) * 100}%, #CCCBCB ${(borderRadius / 50) * 100}%)`,
+                            background: `linear-gradient(to right, #ff6500 ${(borderRadius / 50) * 100}%, #ccc ${(borderRadius / 50) * 100}%)`,
                             height: '16px',
                         }}
                     />
 
                     <style jsx>{`
     input[type='range']::-webkit-slider-thumb {
-        background-color: #ffa76d;
+        background-color: #ff6500; /* Orange color for the slider thumb */
         border-radius: 50%;
         width: 24px;
         height: 24px;
@@ -208,7 +200,7 @@ export default function SubtitleEditor({
         margin-top: -1px; /* Ensures alignment */
     }
     input[type='range']::-moz-range-thumb {
-        background-color: #ffa76d;
+        background-color: #ff6500; /* Orange color for the slider thumb */
         border-radius: 50%;
         width: 24px;
         height: 24px;
