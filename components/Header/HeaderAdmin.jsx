@@ -61,7 +61,7 @@ const Header = () => {
 
                 {/* Manage Subscription Section */}
                 <div className={styles.subscription}>
-                  <p>Manage Subscription</p>
+                  <Link href='/subscription'className='link'><p>Manage Subscription</p></Link>
                   <div className={styles.forLast}>
                     <p>Credit left</p>
                     <p className={styles.forfnt}>10</p>

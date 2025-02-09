@@ -62,7 +62,9 @@
 .forfnt{
   color: #19191980 !important;
 }
-
+.link{
+  text-decoration: none !important;
+}
 /* Subcontainer for username and email */
 .userInfo {
   width: 230px;

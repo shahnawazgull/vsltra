@@ -61,7 +61,7 @@ const SignUp = () => {
         </div>
 
         <h5 className="login-title text-center mt-3">Sign up</h5>
-        <h5 className="text-center text-2xl text-zinc-500 font-semibold forwidth">
+        <h5 className="text-center text-2xl text-zinc-500 font-semibold forwidth mb-10">
           Set Your Email And Password<br/> For Your Account Below
         </h5>
 
@@ -129,15 +129,7 @@ const SignUp = () => {
             Sign up
           </button>
 
-          {/* Sign-in Link */}
-          <div className="text-center mt-3">
-            <p className="forget-login">
-              Already have an account?{" "}
-              <Link href="/accounts/login" className="text-blue-600">
-                Sign in
-              </Link>
-            </p>
-          </div>
+          
         </form>
       </div>
     </section>

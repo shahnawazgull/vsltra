@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+.login-sec.att-log-bg {
+  background: url(/assets/images/login-bg.png) no-repeat;
+  background-size: cover;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/* Content Container: Sets width, margin, padding, and border styling for the content section */
+.content {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  max-width: 1296px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 24px 0px 34px 0px;
+  border-radius: 8px;
+  background-color: #fff;
+  gap: 16px;
+  font-family: 'Montserrat';
+}
+
+.for-border {
+  width: 95.5%;
+  margin: 0 auto;
+}
+
+.for-border .plan p {
+  margin-bottom: 0px;
+}
+
+/* Text Flexbox: Aligns text content with space between the elements */
+.text {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.486);
+  padding-left: 24px;
+  padding-right: 24px;
+  align-items: center;
+}
+
+.sub-p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Bill Button: Adds styles for the bill info button */
+.bill {
+  text-transform: capitalize;
+  border: 1px solid #00000080;
+  padding: 12px 20px;
+  border-radius: 66px;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+/* Hover Effect for Bill Button: Changes background and text color on hover */
+.bill:hover {
+  background-color: #FF7B24;
+  color: #fff;
+}
+
+/* Plan Section: Sets layout and baseline alignment for the subscription plans */
+.plan {
+  display: flex;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  padding: 40px 5px;
+  height: 74px;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.io {
+  font-size: 8px;
+}
+
+/* Plan Text Spacing: Adds margin between text elements inside the plan section */
+.cr-text {
+  margin-right: 24px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Plan Button: Basic styles for the plan button */
+.plan .btn {
+  background-color: #CCCCCC;
+  border-radius: 30px;
+  text-transform: capitalize;
+  border-radius: 100px;
+  padding: 8px 12px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Subscription Status Styling: Sets styles for the subscription status */
+.subs {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  height: 74px;
+}
+
+/* Active Subscription Styling: Adds background color, border radius, and padding to the active status */
+.act {
+  background-color: #41FF714D;
+  border-radius: 30px;
+  text-transform: capitalize;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Credit Section Text: Applies capitalization to the credit section text */
+.credit p {
+  text-transform: capitalize;
+}
+
+.cr-usage {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.credit {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 25px 5px;
+  height: 150px;
+}
+
+.credit-text {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.7);
+
+}
+
+/* Credit Bar: Creates a progress bar with a gradient fill */
+.bar {
+  width: 100%;
+  height: 18px;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  width: 44%;
+  background-color: #FF7B24;
+  border-radius: 60px
+}
+
+/* Secondary Main Section: Adjusts margins and width for the section containing additional content */
+.second-main {
+  width: 1150px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+
+/* Heading Style: Centers the heading and adds padding and font size */
+.heading {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.8px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+/* Text inside Second Main Section: Sets width and margin for paragraphs */
+.second-main p {
+  max-width: 830px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 21.6px;
+  color: #000000B3;
+}
+
+/* Credit Purchase Box: Centers and styles the credit purchase input and button */
+.credit-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 40px;
+  width: 100%;
+
+}
+
+.box-cont {
+  width: 420px;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 25px 27px;
+  line-height: 32px;
+  border-radius: 8px;
+}
+
+/* Input Field Styles: Adds padding, border color, and radius for the input fields inside credit purchase box */
+.box-cont input {
+  border-radius: 4px;
+  border: 1px solid #E3E3E3;
+  padding: 10px 24px;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: #00000080;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: 'Montserrat';
+  letter-spacing: 2%;
+  font-weight: 500;
+}
+
+/* Credit Box Heading Style: Applies color, bold font, and line height to the heading */
+.cr {
+  color: #FF6500;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+
+/* Purchase Button Styles: Defines basic styles for the purchase button */
+.credit-box button {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #FF6500;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all ease-in 0.2s;
+  border: 1px solid #000000;
+}
+
+.dollar {
+  margin-bottom: 13px;
+  color: #000000B3;
+}
+
+/* Purchase Button Hover: Changes background color on hover */
+.credit-box button:hover {
+  background-color: #FF7B24;
+}
+
+/* Main Heading Style: Centers the main heading for the plans section */
+.main-head {
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  margin-top: 40px;
+  height: 108px;
+  margin-bottom: 72px;
+
+}
+
+.main-head h1 {
+  font-size: 48px;
+  font-weight: 700;
+  width: 45%;
+  color: #000000;
+  text-align: center;
+}
+
+/* Plans Grid Layout: Sets up a three-column grid for the plans section */
+.plans {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  align-items: stretch;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-family: 'Montserrat';
+  max-width: 1295px;
+}
+
+/* Plan Box Style: Basic styles for each plan box */
+.box {
+  background-color: #fff;
+  padding: 28px 32px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+      0 6px 20px rgba(0, 0, 0, 0.1); */
+  min-height: 370px;
+  border-radius: 16px;
+  border: 1px solid #E3E3E3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 418px;
+  height: 405px;
+  flex-wrap: wrap;
+  box-shadow:
+    0px 1px 4px rgba(12, 12, 13, 0.1),
+    0px 1px 4px rgba(12, 12, 13, 0.05);
+
+}
+
+.pro-i {
+  color: white;
+}
+
+/* Plan Box Heading: Styles the heading inside each plan box */
+.box-head {
+  margin-top: .5rem;
+  text-transform: capitalize;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.box2 {
+  background: linear-gradient(271.13deg, rgba(142, 142, 142, 0) 0%, rgba(142, 142, 142, 0.5) 25%, rgba(17, 17, 17, 1) 143.74%);
+  background-clip: text;
+  /* Standard property */
+  -webkit-background-clip: text;
+  /* Vendor-prefixed property for WebKit browsers */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* Fallback for non-WebKit browsers */
+}
+
+.box p {
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  /* color: rgba(227, 227, 227, 1); */
+}
+
+.select {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.box-head {
+  color: white;
+}
+
+/* Text inside Plan Boxes: Sets width and capitalization for plan descriptions */
+.box p {
+  text-transform: capitalize;
+}
+
+.for-border .plan p {
+  margin-bottom: 0px;
+}
+
+.box-head p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.p-excl {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.p-marg {
+  margin-top: -18px;
+}
+
+/* Price Display: Aligns price text and icons inside plan boxes */
+.price {
+  display: flex;
+  align-items: center;
+}
+
+/* Price Text Styling: Aligns price span to the bottom */
+.price span {
+  display: flex;
+  align-items: self-start;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.price h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.p-pro2 p {
+  color: white;
+}
+
+.p-cent {
+  color: rgba(96, 101, 113, 1);
+  text-align: center;
+}
+
+.i-blue {
+  color: #FF7B24;
+}
+
+.p-pro2 {
+  color: #D4D4D4;
+}
+
+/* Button Styling inside Plan Boxes: Styles and adds hover effects to buttons */
+.box button {
+  border: 1px solid #FF6500;
+  border-radius: 10px;
+  width: 100%;
+  /* color: rgba(25, 25, 25, 1); */
+  background-color: #fff;
+  padding: 12px 18px;
+  text-transform: capitalize;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.67rem;
+  transition: all ease-in 0.3s;
+  font-size: 18px;
+  border-radius: 38px;
+
+}
+
+.excl {
+  background-color: #FF7B24;
+  color: white;
+}
+
+.box-sub {
+  background-color: #FF7B24;
+  color: #FFFFFF;
+}
+
+.Downgrade-txt {
+  color: #FF6500;
+}
+
+/* Upgrade Button: Special styling for the upgrade button */
+#up {
+  border-radius: 38px;
+  border: 1px solid black;
+  background-color: white;
+  color: rgba(25, 25, 25, 1);
+  transition: all ease-in 0.2s;
+  color: #111111;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Hover Effect for Upgrade Button: Changes background color on hover */
+#up:hover {
+  background-color: #FF7B24;
+  color: white;
+}
+
+/* Hover Effect for Other Plan Buttons: Changes background color and text color on hover */
+.box button:hover {
+  background-color: #FF7B24;
+  color: white;
+}
