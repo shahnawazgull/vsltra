@@ -1,4 +1,4 @@
-import HeaderAdmin from '/components/Header/HeaderAdmin';
+import HeaderAdmin from '/components/Header/Header2';
 import React from 'react'
 import '/public/assets/css/terms.css'
 import Footer from '/components/Footer/Footer2';
@@ -8,7 +8,7 @@ const page = () => {
         <HeaderAdmin />
         <div className='parent-con'>
             <div className="terms-content">
-                <h1 className='terms-h1 terms-h1ex'>Affiliate Program Terms for VSLTranslator.io</h1>
+                <h1 className='terms-h1'>Affiliate Program Terms for VSLTranslator.io</h1>
 
                 <h3 className='terms-h3'>1. Introduction</h3>
                 <p className='terms-p'>
@@ -44,7 +44,7 @@ const page = () => {
                 </p>
             </div>
         </div>
-        {/* <Footer/> */}
+        <Footer/>
         </>
             
     )

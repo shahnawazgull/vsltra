@@ -66,7 +66,7 @@ const Header = () => {
                     <p>Credit left</p>
                     <p className={styles.forfnt}>10</p>
                   </div>
-                  <Link href='/affiliate'>
+                  <Link href='#'>
                   <p>Affiliate</p>
                   </Link>
                 </div>

@@ -318,17 +318,24 @@
   }
   .footer-nav a {
     font-size: 1.8rem;
-    margin: 0px 22px 28px 10px;
+    /* margin: 0px 22px 28px 10px; */
     display: block;
   }
-
+ 
+  .footer-nav, .term-condition {
+    width: 100%;
+  }
+  /* .footer .how-term {
+    flex-direction: column;
+    align-items: center;
+  } */
   .secondry-footer {
     display: flex;
     justify-content: space-between;
     padding: 48px 0 52px;
   }
   .term-condition a {
-    margin: 3px 5px 23px 35px;
+    margin: 3px 5px 23px 0px;
   }
   .ext-node {
     position: relative;
@@ -756,6 +763,21 @@
   .how-work .main-title{
     font-size: 24px;
     margin-bottom: 24px;
+  }
+  .term-condition{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-nav a{
+    margin: 0px 30px 29px 0;
+  }
+  .term-condition a{
+    margin-bottom: 30px;
+    text-align: center;
   }
 }
 

@@ -43,11 +43,13 @@ const Footer = () => {
               <Link href='/terms/terms-condition'>Terms & Condition</Link>
               <Link href='/terms/privacy-policy'>Privacy Policy</Link>
               <Link href='/terms/refund-policy'>Refund Policy</Link>
+              <Link href='/terms/affiliate'>Affiliate Program Policy</Link>
+
             </div>
           </div>
         </div>
         <div className='secondry-footer'>
-          <p className='copy-rgt'>&copy; 2021 VSLTranslator. All rights reserved.</p>
+          <p className='copy-rgt'>&copy; 2025 VSLTranslator. All rights reserved.</p>
         </div>
       </div>
     </footer>

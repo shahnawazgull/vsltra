@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
 import Image from 'next/image'; // Import the Image component
-import playIcn from '/public/assets/images/photo-icn.svg';
+import playIcn from '/public/assets/images/play-icon.svg';
 import cursorHead from '/public/assets/images/Cursor-Head--Streamline-Retro.svg';
 import carouselCard from '/public/assets/images/carousel-card-gray.jpg';
 import "/public/assets/css/global.css";
@@ -39,7 +39,7 @@ const Banner = () => {
                 src={carouselCard}
                 alt='carousel card'
               /> {/* Use Image component */}
-              <span className='play-btn2'>
+              <span className='play-btn'>
                 <Image src={playIcn} alt='play icon' /> {/* Use Image component */}
               </span>
             </figure>

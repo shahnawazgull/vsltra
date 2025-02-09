@@ -46,6 +46,8 @@
 
 .banner-img {
   padding: 8px;
+  margin: 0 auto;
+  width: 990px;
 }
 
 .banner-img figure {
@@ -1862,10 +1864,18 @@ p.download-text {
     line-height: 22px;
     color: #D4D4D4;
   }
-  .footer-nav {
-    /* text-align: center; */
-    font-size: 18px;
-    font-weight: 400;
+  .footer .how-term {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-nav,.term-condition {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align links */
+    text-align: center;
   }
   .footer-nav Link{
     font-size: 18px;

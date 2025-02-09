@@ -391,14 +391,15 @@ a:hover {
   margin-bottom: 30px;
 }
 .footer-nav {
-  padding-bottom: 16px;
+  /* padding-bottom: 16px; */
 }
 .footer-nav a {
   color: #ffffff;
   transition: all 0.2s ease-in-out;
   font-size: 1.8rem;
   line-height: 1.2;
-  margin: 20px 30px 8px 0;
+  margin: 4px 30px 29px 0;
+
 }
 .footer-nav a:hover {
   color: #ff6500;
@@ -422,7 +423,8 @@ a:hover {
   transition: all 0.2s ease-in-out;
 }
 .term-condition a {
-  margin: 8px 40px 23px 0;
+  width: 132%;
+  /* margin: 8px 40px 23px 0; */
 }
 .term-condition a:hover {
   color: #ff6500;
