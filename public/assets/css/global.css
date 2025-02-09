@@ -390,9 +390,7 @@ a:hover {
 .footer .heading-block {
   margin-bottom: 30px;
 }
-.footer-nav {
-  /* padding-bottom: 16px; */
-}
+
 .footer-nav a {
   color: #ffffff;
   transition: all 0.2s ease-in-out;

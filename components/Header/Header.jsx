@@ -14,17 +14,6 @@ import UserProfile from '/components/global/UserProfile';
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      window.scrollTo({
-        top: section.offsetTop - document.querySelector('.header').offsetHeight,
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-  };
-
   return (
     <header className='header'>
       <div className='flex items-center justify-center '>
