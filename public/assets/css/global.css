@@ -408,11 +408,17 @@ a:hover {
   border-bottom: 1px solid #e3e3e3;
   border-top: 1px solid #a8a8a8;
 }
-
+.how-term{
+  display: flex;
+}
+.term-condition{
+  display: flex;
+  flex-direction: column;
+}
 .copy-rgt,
 .term-condition a {
   color: #9f9c9c;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   transition: all 0.2s ease-in-out;
 }
 .term-condition a {

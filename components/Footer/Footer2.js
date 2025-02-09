@@ -1,19 +1,12 @@
 "use client";
 import Link from 'next/link';
 import footerLogo from '../../public/assets/images/logo.svg';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '/public/tailwind.css'
+// Import your custom styles after Tailwind and Bootstrap
+import "/public/assets/css/global.css";
+import "/public/assets/css/responsive.css";
 const Footer = () => {
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      window.scrollTo({
-        top: section.offsetTop - document.querySelector('.header').offsetHeight,
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-  };
-
   return (
     <footer className='footer'>
       <div className='container'>

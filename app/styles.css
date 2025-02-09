@@ -21,7 +21,7 @@ body {
 
 
 /* Content Container: Sets width, margin, padding, and border styling for the content section */
-.content {
+.subscription-content {
   border: 1px solid rgba(0, 0, 0, 0.3);
   max-width: 1296px;
   margin: auto;
@@ -33,17 +33,17 @@ body {
   font-family: 'Montserrat';
 }
 
-.for-border {
+.subscription-for-border {
   width: 95.5%;
   margin: 0 auto;
 }
 
-.for-border .plan p {
+.subscription-for-border .plan p {
   margin-bottom: 0px;
 }
 
 /* Text Flexbox: Aligns text content with space between the elements */
-.text {
+.subscription-text {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid rgba(128, 128, 128, 0.486);
@@ -78,7 +78,7 @@ body {
 }
 
 /* Plan Section: Sets layout and baseline alignment for the subscription plans */
-.plan {
+.subscription-plan {
   display: flex;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   text-transform: capitalize;
@@ -100,7 +100,7 @@ body {
 }
 
 /* Plan Button: Basic styles for the plan button */
-.plan .btn {
+.subscription-plan .subscription-btn {
   background-color: #CCCCCC;
   border-radius: 30px;
   text-transform: capitalize;
@@ -112,13 +112,13 @@ body {
 }
 
 /* Subscription Status Styling: Sets styles for the subscription status */
-.subs {
+.subscription-subs {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   height: 74px;
 }
 
 /* Active Subscription Styling: Adds background color, border radius, and padding to the active status */
-.act {
+.subscription-act {
   background-color: #41FF714D;
   border-radius: 30px;
   text-transform: capitalize;
@@ -131,22 +131,22 @@ body {
 }
 
 /* Credit Section Text: Applies capitalization to the credit section text */
-.credit p {
+.subscription-credit p {
   text-transform: capitalize;
 }
 
-.cr-usage {
+.subscription-cr-usage {
   font-size: 20px;
   font-weight: 500;
 }
 
-.credit {
+.subscription-credit {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   padding: 25px 5px;
   height: 150px;
 }
 
-.credit-text {
+.subscription-credit-text {
   display: flex;
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.7);
@@ -154,7 +154,7 @@ body {
 }
 
 /* Credit Bar: Creates a progress bar with a gradient fill */
-.bar {
+.subscription-bar {
   width: 100%;
   height: 18px;
   background-color: rgba(217, 217, 217, 1);
@@ -171,7 +171,7 @@ body {
 }
 
 /* Secondary Main Section: Adjusts margins and width for the section containing additional content */
-.second-main {
+.subscription-second-main {
   width: 1150px;
   margin: auto;
   margin-top: 40px;
@@ -179,7 +179,7 @@ body {
 }
 
 /* Heading Style: Centers the heading and adds padding and font size */
-.heading {
+.subscription-heading {
   display: flex;
   justify-content: center;
   font-size: 36px;
@@ -190,7 +190,7 @@ body {
 }
 
 /* Text inside Second Main Section: Sets width and margin for paragraphs */
-.second-main p {
+.subscription-second-main p {
   max-width: 830px;
   margin: 0 auto;
   text-align: center;
@@ -203,7 +203,7 @@ body {
 }
 
 /* Credit Purchase Box: Centers and styles the credit purchase input and button */
-.credit-box {
+.subscription-credit-box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -213,7 +213,7 @@ body {
 
 }
 
-.box-cont {
+.subscription-box-cont {
   width: 420px;
   max-width: 100%;
   background-color: #fff;
@@ -223,7 +223,7 @@ body {
 }
 
 /* Input Field Styles: Adds padding, border color, and radius for the input fields inside credit purchase box */
-.box-cont input {
+.subscription-box-cont input {
   border-radius: 4px;
   border: 1px solid #E3E3E3;
   padding: 10px 24px;
@@ -238,7 +238,7 @@ body {
 }
 
 /* Credit Box Heading Style: Applies color, bold font, and line height to the heading */
-.cr {
+.subscription-cr {
   color: #FF6500;
   font-weight: bold;
   font-size: 20px;
@@ -247,7 +247,7 @@ body {
 }
 
 /* Purchase Button Styles: Defines basic styles for the purchase button */
-.credit-box button {
+.subscription-credit-box button {
   border: none;
   border-radius: 5px;
   width: 100%;
@@ -261,18 +261,18 @@ body {
   border: 1px solid #000000;
 }
 
-.dollar {
+.subscription-dollar {
   margin-bottom: 13px;
   color: #000000B3;
 }
 
 /* Purchase Button Hover: Changes background color on hover */
-.credit-box button:hover {
+.subscription-credit-box button:hover {
   background-color: #FF7B24;
 }
 
 /* Main Heading Style: Centers the main heading for the plans section */
-.main-head {
+.subscription-main-head {
   display: flex;
   justify-content: center;
   text-transform: capitalize;
@@ -282,7 +282,7 @@ body {
 
 }
 
-.main-head h1 {
+.subscription-main-head h1 {
   font-size: 48px;
   font-weight: 700;
   width: 45%;
@@ -291,7 +291,7 @@ body {
 }
 
 /* Plans Grid Layout: Sets up a three-column grid for the plans section */
-.plans {
+.subscription-plans {
   margin: 0 auto;
   margin-bottom: 5rem;
   align-items: stretch;
@@ -303,7 +303,7 @@ body {
 }
 
 /* Plan Box Style: Basic styles for each plan box */
-.box {
+.subscription-box {
   background-color: #fff;
   padding: 28px 32px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
@@ -323,19 +323,19 @@ body {
 
 }
 
-.pro-i {
+.subscription-pro-i {
   color: white;
 }
 
 /* Plan Box Heading: Styles the heading inside each plan box */
-.box-head {
+.subscriptionbox-head {
   margin-top: .5rem;
   text-transform: capitalize;
   font-size: 26px;
   font-weight: 700;
 }
 
-.box2 {
+.subscription-box2 {
   background: linear-gradient(271.13deg, rgba(142, 142, 142, 0) 0%, rgba(142, 142, 142, 0.5) 25%, rgba(17, 17, 17, 1) 143.74%);
   background-clip: text;
   /* Standard property */
@@ -346,36 +346,36 @@ body {
   /* Fallback for non-WebKit browsers */
 }
 
-.box p {
+.subscription-box p {
   margin-bottom: 0px;
   display: flex;
   align-items: center;
   /* color: rgba(227, 227, 227, 1); */
 }
 
-.select {
+.subscription-select {
   font-family: 'Inter', sans-serif !important;
 }
 
-.box-head {
+.subscriptionbox-head {
   color: white;
 }
 
 /* Text inside Plan Boxes: Sets width and capitalization for plan descriptions */
-.box p {
+.subscription-box p {
   text-transform: capitalize;
 }
 
-.for-border .plan p {
+.subscription-for-border .plan p {
   margin-bottom: 0px;
 }
 
-.box-head p {
+.subscriptionbox-head p {
   font-size: 16px;
   font-weight: 400;
 }
 
-.p-excl {
+.subscription-p-excl {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -385,18 +385,18 @@ body {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.p-marg {
+.subscription-p-marg {
   margin-top: -18px;
 }
 
 /* Price Display: Aligns price text and icons inside plan boxes */
-.price {
+.subscription-price {
   display: flex;
   align-items: center;
 }
 
 /* Price Text Styling: Aligns price span to the bottom */
-.price span {
+.subscription-price span {
   display: flex;
   align-items: self-start;
   font-size: 16px;
@@ -404,31 +404,31 @@ body {
   margin-left: 5px;
 }
 
-.price h1 {
+.subscription-price h1 {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 0px;
 }
 
-.p-pro2 p {
+.subscriptionp-pro2 p {
   color: white;
 }
 
-.p-cent {
+.subscription-p-cent {
   color: rgba(96, 101, 113, 1);
   text-align: center;
 }
 
-.i-blue {
+.subscription-i-blue {
   color: #FF7B24;
 }
 
-.p-pro2 {
+.subscriptionp-pro2 {
   color: #D4D4D4;
 }
 
 /* Button Styling inside Plan Boxes: Styles and adds hover effects to buttons */
-.box button {
+.subscription-box .subscription-button {
   border: 1px solid #FF6500;
   border-radius: 10px;
   width: 100%;
@@ -446,17 +446,17 @@ body {
 
 }
 
-.excl {
+.subscription-excl {
   background-color: #FF7B24;
   color: white;
 }
 
-.box-sub {
+.subscription-box-sub {
   background-color: #FF7B24;
   color: #FFFFFF;
 }
 
-.Downgrade-txt {
+.subscription-Downgrade-txt {
   color: #FF6500;
 }
 
@@ -479,7 +479,7 @@ body {
 }
 
 /* Hover Effect for Other Plan Buttons: Changes background color and text color on hover */
-.box button:hover {
+.subscription-box .subscription-button:hover {
   background-color: #FF7B24;
   color: white;
 }

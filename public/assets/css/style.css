@@ -702,9 +702,12 @@
   padding: 15px;
   background: #ff6500;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
-
+.forfnt{
+  font-size: 1.4rem;
+  font-weight: 600;
+}
 .forbtn {
   background: #ff6500;
   color: #fff;

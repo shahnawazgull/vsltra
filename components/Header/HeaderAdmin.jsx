@@ -30,10 +30,10 @@ const Header = () => {
     <div className={styles.parentMain}>
       <div className={styles.headerMain}>
         <div className={styles.headerContent}>
-          <a href='/voice-and-subtitle'>
+          <Link href='/voice-and-subtitle'>
             {/* Logo */}
             <Image src="/assets/images/logo.svg" alt="Logo" height={47} width={290} />
-          </a>
+          </Link>
 
           {/* Sub Header Section */}
           <div className={styles.subMain}>
@@ -66,7 +66,9 @@ const Header = () => {
                     <p>Credit left</p>
                     <p className={styles.forfnt}>10</p>
                   </div>
+                  <Link href='/affiliate'>
                   <p>Affiliate</p>
+                  </Link>
                 </div>
 
 

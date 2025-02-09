@@ -1,79 +1,83 @@
-'use client'; // Ensure that this component is run on the client side
-
+"use client"
 import { useState } from 'react';
-import { useRouter } from 'next/navigation'; // Use next/navigation instead of next/router in App Router
-import { toast } from 'react-toastify';
+import Image from 'next/image';
+import Head from 'next/head';
+import '/public/assets/css/password-reset.css'
 import Link from 'next/link';
-import Image from 'next/image'; // Import Next.js Image component for optimization
-import InputText from '/components/global/Input/Text';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '/public/assets/css/style.css';
-import '/public/assets/css/global.css';
-import '/public/assets/css/responsive.css';
-
 const ResetPassword = () => {
-  const router = useRouter(); // Use useRouter from 'next/navigation' for App Router
+  const [passwordVisible, setPasswordVisible] = useState(false);
   const [email, setEmail] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
+  // Toggle password visibility
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (!email) {
-      toast.error('Please enter your email address');
-      return;
-    }
-
-    setIsLoading(true);
-
-    try {
-      // Simulate the password reset process
-      // Normally, you'd make an API call here
-      await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate loading
-
-      toast.success('Password reset instructions sent to your email');
-      router.push('/accounts/login'); // Redirect to login after successful reset request
-    } catch (error) {
-      toast.error('An error occurred while requesting password reset');
-    } finally {
-      setIsLoading(false);
-    }
+    // Handle form submission logic here (e.g., send request to API)
+    console.log("Email submitted:", email);
   };
 
   return (
-    <section className="reset-password-sec att-log-bg">
-      <div className="reset-container">
-        <div className="vsl-logo text-center">
-          <Link href="/">
-            <Image src="/assets/images/vsl-logo.svg" alt="Logo" width={270} height={50} />
-          </Link>
-        </div>
-        <h5 className="reset-title text-center">Reset Your Password</h5>
-        <form className="form-block" onSubmit={handleSubmit}>
-          <div className="custom-margin">
-            <InputText
-              type="email"
-              label="Email Address:"
-              name="email"
-              inputFor="exampleInputEmail1"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+    <>
+      <main className='.login-sec.att-log-bg main'>
+        <div className="contant">
+          <Link href='/'>
+            <Image
+              src="/assets/images/vsl-logo.svg"
+              alt="Logo"
+              width={270}
+              height={50}
             />
-          </div>
-          <div className="text-center">
-            <button type="submit" className="btns admin-btns" disabled={isLoading}>
-              {isLoading ? 'Sending...' : 'Send Reset Link'}
-            </button>
-          </div>
-        </form>
-        <div className="text-center mt-3">
-          <Link href="/accounts/login" className="back-to-login-link">
-            Back to Login
           </Link>
+
+          <form className="form" onSubmit={handleSubmit}>
+            <h2
+              style={{
+                color: '#000000',
+                fontWeight: 600,
+                fontSize: '20px',
+                justifyContent: 'center',
+                alignItems: 'center',
+                textAlign: 'center',
+              }}
+            >
+              Reset Password
+            </h2>
+
+            {/* Email Input Field */}
+            <fieldset name="email">
+              <legend>Email:</legend>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+            </fieldset>
+
+            {/* Submit Button */}
+            <Link href='/accounts/reset-done'>
+            <button className='button'
+              style={{
+                color: 'white',
+                backgroundColor: '#FF6500',
+                borderColor: '#000000',
+              }}
+              id="sign-in"
+              type="submit"
+            >
+              Send Email
+            </button>
+            </Link>
+          </form>
         </div>
-      </div>
-    </section>
+      </main>
+    </>
   );
 };
 
