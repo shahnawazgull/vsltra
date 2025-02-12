@@ -19,7 +19,7 @@ const Header = () => {
     <header className='header'>
       <div className='flex items-center justify-center '>
         <Navbar expand="lg" className="navbar-container">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="./">
             <Image src={logo} alt="logo" />
           </a>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -37,7 +37,7 @@ const Header = () => {
               <a className="nav-link" href="/#contactInfo">
                 Contact
               </a>
-              <a className="nav-link" href="/accounts/login">
+              <a className="nav-link" href="./accounts/login">
                 Login
               </a>
 
