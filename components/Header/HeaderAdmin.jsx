@@ -61,14 +61,14 @@ const Header = () => {
 
                 {/* Manage Subscription Section */}
                 <div className={styles.subscription}>
-                  <Link href='/subscription'className='link'><p>Manage Subscription</p></Link>
+                  <a href='/subscription'className='link'><p>Manage Subscription</p></a>
                   <div className={styles.forLast}>
                     <p>Credit left</p>
                     <p className={styles.forfnt}>10</p>
                   </div>
-                  <Link href='#'>
+                  <a href='#' className={styles.link}>
                   <p>Affiliate</p>
-                  </Link>
+                  </a>
                 </div>
 
 
@@ -76,7 +76,7 @@ const Header = () => {
                 <div className={styles.border}></div>
 
                 {/* Log Out Button */}
-                <Link href="/" className={styles.logoutButton}>Log out</Link>
+                <a href="/" className={styles.logoutButton}>Log out</a>
               </div>
             )}
           </div>

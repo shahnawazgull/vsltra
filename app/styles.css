@@ -32,7 +32,9 @@ body {
   gap: 16px;
   font-family: 'Montserrat';
 }
-
+.link{
+  text-decoration: none;
+}
 .subscription-for-border {
   width: 95.5%;
   margin: 0 auto;

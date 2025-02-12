@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import HeaderAdmin from '/components/Header/HeaderAdmin';
+import '/components/Header/header.module.css'
 import '/components/Header/header.module.css';
 import '/app/styles.css'
 

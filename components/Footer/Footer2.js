@@ -13,9 +13,9 @@ const Footer = () => {
         <div className='primary-footer'>
           <div className='heading-block text-center'>
             <h2 className='main-title'>
-              <Link href='#!' className='footer-logo'>
+              <a href='/' className='footer-logo'>
                 <img src={footerLogo.src} alt='logo' />
-              </Link>
+              </a>
             </h2>
             <p className='footer-desc'>
               With VSLTranslator.io, you can easily create high-converting
@@ -25,18 +25,18 @@ const Footer = () => {
           <div className='how-term'>
             <div className='footer-nav'>
               {/* Ensure full path is used for anchor links */}
-              <Link href='/#howItWork'>
+              <a href='/#howItWork'>
                 How it works
-              </Link>
-              <Link href='/#pricing'>
+              </a>
+              <a href='/#pricing'>
                 Pricing
-              </Link>
-              <Link href='/#portFolio'>
+              </a>
+              <a href='/#portFolio'>
                 Portfolio
-              </Link>
-              <Link href='/#contactInfo' className='cont'>
+              </a>
+              <a href='/#contactInfo' className='cont'>
                 Contact
-              </Link>
+              </a>
             </div>
             <div className='term-condition'>
               {/* Links to terms and condition pages */}

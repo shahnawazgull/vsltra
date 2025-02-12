@@ -19,27 +19,27 @@ const Header = () => {
     <header className='header'>
       <div className='flex items-center justify-center '>
         <Navbar expand="lg" className="navbar-container">
-          <Link className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/">
             <Image src={logo} alt="logo" />
-          </Link>
+          </a>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-lg-end formargin">
             <Nav className="navbar-nav">
-              <Link className="nav-link" href="/#howItWork">
+              <a className="nav-link" href="/#howItWork">
                 How It Works
-              </Link>
-              <Link className="nav-link" href="/#portFolio">
+              </a>
+              <a className="nav-link" href="/#portFolio">
                 Portfolio
-              </Link>
-              <Link className="nav-link" href="/#pricing">
+              </a>
+              <a className="nav-link" href="/#pricing">
                 Pricing
-              </Link>
-              <Link className="nav-link" href="/#contactInfo">
+              </a>
+              <a className="nav-link" href="/#contactInfo">
                 Contact
-              </Link>
-              <Link className="nav-link" href="/accounts/login">
+              </a>
+              <a className="nav-link" href="/accounts/login">
                 Login
-              </Link>
+              </a>
 
             </Nav>
             <div className="header-profile flex gap-2">

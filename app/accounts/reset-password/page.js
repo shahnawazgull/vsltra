@@ -24,14 +24,14 @@ const ResetPassword = () => {
     <>
       <main className='.login-sec.att-log-bg main'>
         <div className="contant">
-          <Link href='/'>
+          <a href='/'>
             <Image
               src="/assets/images/vsl-logo.svg"
               alt="Logo"
               width={270}
               height={50}
             />
-          </Link>
+          </a>
 
           <form className="form" onSubmit={handleSubmit}>
             <h2
@@ -67,6 +67,8 @@ const ResetPassword = () => {
                 color: 'white',
                 backgroundColor: '#FF6500',
                 borderColor: '#000000',
+                width:'346px',
+                textAlign:'center',
               }}
               id="sign-in"
               type="submit"
